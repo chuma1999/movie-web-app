@@ -1,0 +1,205 @@
+.containa {
+    height: 93vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.form {
+    position: absolute;
+    max-width: 430px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 6px;
+    background: rgba(11, 68, 121, 0.993);
+}
+
+.form.signup {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.forms.show-signup .form.signup {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.forms.show-signup .form.login {
+    opacity: 0;
+    pointer-events: none;
+}
+
+header {
+    font-size: 28px;
+    font-weight: 600;
+    color: #232836;
+    text-align: center;
+}
+
+form {
+    margin-top: 30px;
+}
+
+.form .field {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+
+.field input,
+.field button {
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+}
+
+.field input {
+    outline: none;
+    padding: 0 15px;
+    border: 1px solid #cacaca;
+    background-color: transparent;
+}
+
+.field input:focus {
+    border: 2px solid #000;
+}
+
+.eye-iconz {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: rgb(184, 169, 169);
+    cursor: pointer;
+    padding: 5px;
+}
+
+.field button {
+    color: #fff;
+    background: linear-gradient(135deg, rgb(73, 157, 217), rgb(117, 32, 32));
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.field button:hover {
+    background: linear-gradient(135deg, rgb(7, 32, 50), rgb(105, 8, 8));
+}
+
+.form-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form-link span,
+.form-link a {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(184, 169, 169);
+}
+
+.form a {
+    text-decoration: none;
+    color: #0171d3;
+}
+
+.form-content a:hover {
+    text-decoration: underline;
+}
+
+.line {
+    position: relative;
+    height: 1px;
+    width: 100%;
+    margin: 36px 0px;
+    background-color: rgb(184, 169, 169);
+}
+
+.line::before {
+    content: "or";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(11, 68, 121, 0.993);
+    color: rgb(184, 169, 169);
+    padding: 0 15px;
+}
+
+.media-options a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a.facebook {
+    color: #fff;
+    background: linear-gradient(135deg, rgba(7, 32, 50, 0.735), rgba(105, 8, 8, 0.653));
+}
+
+a.facebook .facebook-icon {
+    height: 28px;
+    width: 28px;
+    color: rgba(11, 68, 121, 0.993);
+    font-size: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.facebook-icon,
+img.google-img {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+
+img.google-img {
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+}
+
+a.google {
+    border: 1px solid #cacaca;
+}
+
+a.google span {
+    font-weight: 500;
+    opacity: 0.6;
+    color: rgb(184, 169, 169);
+}
+
+
+/*============================MEDIA QUERIES=====================================*/
+
+
+/* ----------Medium Screen------------ */
+
+@media screen and (max-width: 1024px) {
+    .containa {
+        height: 96vh;
+    }
+}
+
+
+/* ----------Small Screen------------ */
+
+@media screen and (max-width: 480px) {
+    .containa {
+        height: 94vh;
+    }
+    .form {
+        padding: 15px 10px;
+    }
+}

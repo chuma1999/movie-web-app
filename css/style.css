@@ -1,0 +1,673 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100%;
+    background-image: linear-gradient(rgb(49, 26, 105), rgb(17, 10, 44));
+    background-repeat: no-repeat;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+#head {
+    width: 100%;
+}
+
+#head nav {
+    display: flex;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
+    position: relative;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgb(176, 168, 168);
+    margin: 0px 30px;
+}
+
+#head nav div {
+    flex: 20px;
+    font-size: 22px;
+    color: rgb(211, 194, 194);
+}
+
+#head nav div span {
+    color: rgb(62, 79, 192);
+}
+
+.nav-links {
+    z-index: 10;
+}
+
+#head nav ul {
+    display: flex;
+    gap: 4em;
+    flex: 30px;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+#head nav ul li {
+    list-style: none;
+}
+
+#head nav ul li a {
+    text-decoration: none;
+    color: rgb(184, 169, 169);
+    padding-bottom: 28px;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+#head nav ul button {
+    padding: 10px 20px;
+    background-color: rgb(231, 60, 60);
+    border: none;
+    border-radius: 20px;
+    color: rgb(236, 209, 209);
+}
+
+#head nav ul li a:hover,
+#head nav ul li a.active,
+#head nav ul button:hover {
+    color: #fff;
+}
+
+#head nav ul li a.active::after,
+#head nav ul li a:hover::after {
+    content: " ";
+    width: 100%;
+    height: 2.1px;
+    background: rgb(231, 60, 60);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+#open-btn,
+#close-btn {
+    display: none;
+}
+
+
+/*-------------END OF HEADER--------------*/
+
+
+/*-------------SLIDER SECTION--------------*/
+
+#slider {
+    margin: 0px 25px;
+}
+
+#slider h2 {
+    text-align: center;
+    margin: 35px 0px 60px 0px;
+}
+
+.swiper-slide .img_box {
+    background-color: rgb(14, 13, 13);
+    border-radius: 5px;
+    width: 245px;
+}
+
+.img_box {
+    height: 400px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.img_box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.img_box span {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    color: rgb(231, 60, 60);
+    display: none;
+}
+
+.img_box .img_hove {
+    position: absolute;
+    bottom: 60px;
+    left: 10px;
+    display: none;
+}
+
+.img_box .img_hove .info {
+    font-size: 14px;
+}
+
+.img_box .img_hove .info .name {
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+
+.img_box .img_hove .info .year {
+    margin-top: 0px;
+    margin-bottom: 2px;
+    font-size: 16px;
+}
+
+.img_box .img_hove .info .genre {
+    font-size: 14px;
+    opacity: 5;
+}
+
+.img_box .img_hove .info i {
+    margin-right: 5px;
+    color: rgb(239, 239, 6);
+}
+
+.img_box:hover img {
+    opacity: .5;
+}
+
+.img_box:hover span {
+    display: inline-block;
+    animation-name: play;
+    animation-duration: 3s;
+}
+
+.img_box:hover .img_hove {
+    display: inline-block;
+    animation-name: infos;
+    animation-duration: 2s;
+}
+
+@keyframes play {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes infos {
+    0% {
+        bottom: -60px;
+    }
+    100% {
+        bottom: 60px;
+    }
+}
+
+.img_hover .slider_container {
+    margin-bottom: 20px;
+}
+
+.slider_container .container {
+    padding: 0 15px;
+    max-width: 100%;
+    margin: 0px;
+}
+
+.swiper-wrapper {
+    height: 350px;
+}
+
+.card_slider .swiper-button-next,
+.card_slider .swiper-button-prev {
+    border: 2px solid #fff;
+    padding: 30px;
+    border-radius: 50%;
+}
+
+.card_slider .swiper-button-next::after,
+.card_slider .swiper-button-prev::after {
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+/*------------- END OF SLIDER SECTION--------------*/
+
+
+/*-------------MOVIE FILTER--------------*/
+
+#muvis {
+    margin: 180px 0px 10px 0px;
+}
+
+#muvis .muvi_tag {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    margin: 0px 27px;
+}
+
+#muvis .muvi_tag h4 {
+    font-size: 20px;
+}
+
+#muvis .muvi_tag .tagg {
+    width: 300px;
+    margin-left: 250px;
+    margin-right: 320px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#muvis .muvi_tag .tagg button {
+    background: none;
+    border: none;
+    color: rgb(184, 169, 169);
+    padding-bottom: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: relative;
+}
+
+#muvis .muvi_tag .tagg button:hover,
+#muvis .muvi_tag .tagg button.on_tag {
+    color: #fff;
+}
+
+#muvis .muvi_tag .tagg button.on_tag::after,
+#muvis .muvi_tag .tagg button:hover::after {
+    content: " ";
+    width: 100%;
+    height: 2.1px;
+    background: rgb(231, 60, 60);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.search-container {
+    padding-bottom: opx;
+}
+
+.search-container:hover .font-a,
+.search-container:hover .search::placeholder {
+    color: #fff;
+}
+
+.search-container .font-a {
+    padding: 0px;
+    color: rgb(184, 169, 169);
+    background-color: transparent;
+    border: none;
+}
+
+.search-container .search {
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+
+.search-container .search::placeholder {
+    color: rgb(184, 169, 169);
+}
+
+.search-container .search:focus {
+    border: 1px solid #fff;
+}
+
+.muvi_list {
+    margin: 10px 0px 100px 0px;
+    padding: 0px 35px;
+    padding-top: 25px;
+    background-color: rgb(16, 18, 52);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 0px;
+    column-gap: 20px;
+    height: 80vh;
+}
+
+.muvi_list .resize {
+    height: 300px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.muvi_list .img_box .genre-year {
+    font-size: 12px;
+    color: rgb(46, 133, 35);
+    margin-bottom: 5px;
+    margin-top: 3px;
+}
+
+.muvi_list .img_box .name-mv {
+    font-size: 15px;
+}
+
+.muvi_list .img_box .hd {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: rgb(184, 169, 169);
+    color: #000;
+}
+
+.muvi_list .img_box .player {
+    position: absolute;
+    top: 30%;
+    left: 32%;
+    color: rgb(29, 36, 94);
+    z-index: 10;
+    display: none;
+    cursor: pointer;
+}
+
+.muvi_list .img_box:hover .player {
+    display: block;
+}
+
+.muvi_list .img_box .player:hover i {
+    opacity: 1;
+    color: rgb(21, 104, 205);
+}
+
+.muvi_list .img_box .f-ico {
+    width: 20px;
+}
+
+.muvi_list .img_box .f-ico img {
+    width: 100%;
+}
+
+.muvi_list .img_box .ret {
+    position: absolute;
+    bottom: 45px;
+    right: -5px;
+    padding: 2px 4px;
+    background-color: yellow;
+    color: black;
+    font-size: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.muvi_list .resize.hide {
+    display: none;
+}
+
+.button_background {
+    background-color: rgb(16, 18, 52);
+    padding-bottom: 30px;
+}
+
+.button_background .muvi_pg {
+    text-decoration: none;
+    padding: 10px 20px;
+    width: 10%;
+    color: rgb(184, 169, 169);
+    margin: 0 auto;
+    font-size: 14px;
+    border-radius: 20px;
+    background-color: rgb(231, 60, 60);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button_background .muvi_pg:hover {
+    color: #fff;
+}
+
+
+/*-------------END OF MOVIE FILTER--------------*/
+
+
+/*============================MEDIA QUERIES=====================================*/
+
+
+/* ----------Medium Screen------------ */
+
+@media screen and (max-width: 1526px) {
+    #head nav ul li a.active::after,
+    #head nav ul li a:hover::after {
+        bottom: -8px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #head nav {
+        margin: 0px 15px;
+    }
+    /* ==========================SLIDER JS======================================= */
+    .single-muvi-details {
+        top: 20px;
+        left: 15px;
+        width: 170%;
+        display: none;
+    }
+    .muvi-details-sd .grid-revs .side-genre .last {
+        display: none;
+    }
+    .muvi-details-sd .grid-revs .side-genre button {
+        margin-top: 30px;
+    }
+    .muvi-details-sd .revs-grid-btm .stars .give-rev {
+        width: 75px;
+        top: -60px;
+        right: -40px;
+    }
+    /* ==========================END OF SLIDER JS======================================= */
+    .slider_container {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .slider_container .container {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #slider {
+        margin: 10px;
+    }
+    #head {
+        width: 100vw;
+    }
+    #head nav {
+        position: relative;
+    }
+    #head nav ul {
+        max-width: 200px;
+        position: absolute;
+        top: 105%;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+        justify-content: center;
+        padding-left: 20px;
+        margin-right: 0px;
+        display: none;
+    }
+    #head nav ul li {
+        width: 100%;
+        box-shadow: -2rem 4rem 4rem rgba(0, 0, 0, 0.2);
+    }
+    #head nav ul li a {
+        background: rgb(15, 36, 95);
+        height: 4rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding-left: 40px;
+        padding-top: 25px;
+        border-top: 1px solid rgb(115, 30, 30);
+    }
+    #head nav button {
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+    #head nav ul li a.active::after,
+    #head nav ul li a:hover::after {
+        display: none;
+    }
+    #open-btn,
+    #close-btn {
+        display: inline-block;
+        font-size: 23px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    #close-btn {
+        display: none;
+    }
+    /* ==========================MUVI SECTION======================================= */
+    #muvis .muvi_tag {
+        gap: 10px;
+        margin: 0px 15px;
+    }
+    #muvis .muvi_tag h4 {
+        font-size: 16px;
+    }
+    #muvis .muvi_tag .tagg {
+        width: 80px;
+        margin-left: 50px;
+        margin-right: 260px;
+    }
+    .muvi_list {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        height: auto;
+        row-gap: 0;
+        margin-left: 1px;
+        margin-right: 1px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .button_background .muvi_pg {
+        padding: 10px 10px;
+        width: 15%;
+    }
+}
+
+
+/* ----------Small Screen------------ */
+
+@media screen and (max-width: 480px) {
+    #head nav {
+        margin: 0px 10px;
+    }
+    /* ==========================SLIDER JS======================================= */
+    .single-muvi-details {
+        top: 20px;
+        left: 20px;
+        display: none;
+    }
+    .single-muvi-details .flex-hold {
+        flex-direction: column;
+        gap: 0px;
+    }
+    .muvi-img-sd {
+        height: 200px;
+        width: 200px;
+        border-radius: 10px;
+        margin-bottom: 0;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .single-muvi-details .muvi-details-sd {
+        width: 350px;
+        margin-top: 0;
+        border-bottom-left-radius: 10px;
+    }
+    .muvi-img-sd img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .muvi-details-sd .grid-revs .side-genre .last {
+        display: none;
+    }
+    .muvi-details-sd .grid-revs .side-genre button {
+        margin-top: 30px;
+    }
+    .muvi-details-sd .revs-grid-btm .stars .give-rev {
+        width: 50px;
+        top: -30px;
+        right: -35px;
+        font-size: 10px;
+        padding: 13px 0px 13px 8px;
+    }
+    /* ========================== END OF SLIDER JS======================================= */
+    .slider_container {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .slider_container .container {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #head nav ul {
+        width: 40%;
+        position: absolute;
+        top: 105%;
+        right: 0%;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0px;
+        margin-right: 0px;
+        display: none;
+    }
+    #head nav ul li a {
+        background: rgb(15, 36, 95);
+        height: 1rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding-left: 40px;
+        padding-top: 25px;
+        border-top: 1px solid rgb(115, 30, 30);
+    }
+    /*-------------SLIDER SECTION--------------*/
+    #slider {
+        margin: 0px;
+    }
+    /* ==========================MUVI SECTION======================================= */
+    #muvis .muvi_tag {
+        gap: 100px;
+        margin: 0px 10px;
+    }
+    #muvis .muvi_tag h4 {
+        font-size: 16px;
+    }
+    #muvis .muvi_tag .tagg {
+        width: 300px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .muvi_list {
+        grid-template-columns: 1fr 1fr;
+        height: auto;
+        row-gap: 5px !important;
+    }
+    .button_background .muvi_pg {
+        padding: 10px 10px;
+        width: 30%;
+    }
+    #muvis .muvi_tag .search-container {
+        display: none;
+    }
+}

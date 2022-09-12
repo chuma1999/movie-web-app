@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movies || web app</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!--fonts awsome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!--movies sheet-->
+    <link rel="stylesheet" href="./css/movies.css">
+    <!--footer sheet-->
+    <link rel="stylesheet" href="./css/footer.css">
+    <!--slider sheet-->
+    <link rel="stylesheet" href="./css/slider.css">
+    <!--style sheet-->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header id="head">
+        <nav class="nav-container">
+            <div class="logo">CL1V3<span>Movies</span></div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
+                <li><a href="community.html">Community</a></li>
+
+                <button onclick="window.location.href='login.html'">Login or Register</button>
+            </ul>
+
+            <span id="open-btn"><i class="fa-solid fa-bars"></i></span>
+            <span id="close-btn"><i class="fa-solid fa-xmark"></i></span>
+        </nav>
+    </header>
+
+
+    <section class="movies-container">
+
+        <div class="serch-muvis">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Enter your key words....">
+        </div>
+
+        <div class="title">
+            <h2>Movies</h2>
+            <div class="underline"></div>
+        </div>
+
+        <!---filter buttons-->
+        <div class="btn-container">
+            <button class="filter-btn btn-on" type="button" data-movie="all">All</button>
+            <button class="filter-btn margin-left" type="button" data-movie="action">Action</button>
+            <button class="filter-btn margin-left" type="button" data-movie="animation">Animation</button>
+            <button class="filter-btn margin-left lef2" type="button" data-movie="comedy">Comedy</button>
+            <button class="filter-btn margin-left" type="button" data-movie="drama">Drama</button>
+            <button class="filter-btn margin-left" type="button" data-movie="romance">Romance</button>
+            <button class="filter-btn margin-left lef" type="button" data-movie="thriller">Thriller</button>
+
+        </div>
+
+        <!---menu items-->
+        <div class="section-center">
+
+            <!--<div class="one-box">
+                <img src="./images/movies/after blue.jpg-w180" alt="after blue">
+                <p class="genrer-year">
+                    2022 / Drama, Thriller
+                </p>
+                <p class="name-muv">
+                    After Blue
+                </p>
+                <p class="hdd">HD</p>
+                <a class="playerr"><i class="fa-solid fa-circle-play fa-4x"></i></a>
+                <p class="rett">6.6</p>
+            </div>-->
+
+        </div>
+
+        <div class="section-numbers">
+            <span class="numberz on-targert">1</span>
+            <span class="numberz">2</span>
+            <span class="numberz">3</span>
+            <span class="numberz">4</span>
+            <span class="numberz">5</span>
+            <span class="numberz arrow"><i class="fa-solid fa-right-long fa-sm"></i></span>
+        </div>
+
+
+    </section>
+
+
+    <section class="copy_rights">
+        <h5 class="my-name">
+            All &copy Copyrights Reserved <strong class="red"> CLIVE CHUMA</strong>
+        </h5>
+    </section>
+
+    <!-- movies JS -->
+    <script src="./js/movie.js"></script>
+    <!-- main JS -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

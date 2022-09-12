@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movies || web app</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!--fonts awsome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!--footer sheet-->
+    <link rel="stylesheet" href="./css/footer.css">
+    <!--slider sheet-->
+    <link rel="stylesheet" href="./css/slider.css">
+    <!--style sheet-->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header id="head">
+        <nav class="nav-container">
+            <div class="logo">CL1V3<span>Movies</span></div>
+
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="community.html">Community</a></li>
+
+                <button onclick="window.location.href='login.html'">Login or Register</button>
+            </ul>
+
+            <span id="open-btn"><i class="fa-solid fa-bars"></i></span>
+            <span id="close-btn"><i class="fa-solid fa-xmark"></i></span>
+        </nav>
+    </header>
+
+    <section id="slider">
+        <h2>Your weekend buddy for this week</h2>
+
+        <section class="slider_container">
+            <div class="container">
+                <div class="swiper card_slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="img_box">
+                                <img src="./images/slider/man from toronto.jpg-w180" alt="Man from toronto" id="toronto">
+
+                                <span id="single-review-1"><i class="fa-solid fa-circle-play fa-5x"></i></span>
+                                <div class="img_hove">
+                                    <div class="info">
+                                        <p class="name" id="name-toro">The Man From Toronto</p>
+                                        <p class="year">2022</p>
+                                        <p class="genre">Action,Sci-Fi,comedy</p>
+
+                                        <i class="fa-solid fa-star fa-2xs"></i>9
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_box">
+                                <img src="./images/slider/collision.jpg-w180" alt="Collision" id="collision">
+
+                                <span id="single-review-2"><i class="fa-solid fa-circle-play fa-5x"></i></span>
+                                <div class="img_hove">
+                                    <div class="info">
+                                        <p class="name" id="coll">Collision</p>
+                                        <p class="year">2022</p>
+                                        <p class="genre">Drama,Action</p>
+
+                                        <i class="fa-solid fa-star fa-2xs"></i>6
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_box">
+                                <img src="./images/slider/jurrsic world.jpg-w180" alt="jurrasic world" id="jurrasic">
+
+                                <span id="single-review-3"><i class="fa-solid fa-circle-play fa-5x"></i></span>
+                                <div class="img_hove">
+                                    <div class="info">
+                                        <p class="name" id="jura">Jurassic World Dominion</p>
+                                        <p class="year">2022</p>
+                                        <p class="genre">Sci-Fi,Adventure,Action</p>
+
+                                        <i class="fa-solid fa-star fa-2xs"></i>6
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_box">
+                                <img src="./images/slider/thor love and thunder.jpg-w180" alt="thor love and thunder" id="thor">
+
+                                <span id="single-review-4"><i class="fa-solid fa-circle-play fa-5x"></i></span>
+                                <div class="img_hove">
+                                    <div class="info">
+                                        <p class="name" id="thunder">Thor Love and Thunder</p>
+                                        <p class="year">2022</p>
+                                        <p class="genre">Comedy,Adventure,Action</p>
+
+                                        <i class="fa-solid fa-star fa-2xs"></i>7.5
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_box">
+                                <img src="./images/slider/multiverse of madness.jpg-w180" alt="doctor strange" id="Doctor-strange">
+
+                                <span id="single-review-5"><i class="fa-solid fa-circle-play fa-5x"></i></span>
+                                <div class="img_hove">
+                                    <div class="info">
+                                        <p class="name" id="strange">Doctor strange</p>
+                                        <p class="year">2022</p>
+                                        <p class="genre">Action,Sci-Fi</p>
+
+                                        <i class="fa-solid fa-star fa-2xs"></i>8
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_box">
+                                <img src="./images/slider/chickenhare.jpg-w180" alt="chickenhare" id="chickenhare">
+
+                                <span id="single-review-6"><i class="fa-solid fa-circle-play fa-5x"></i></span>
+                                <div class="img_hove">
+                                    <div class="info">
+                                        <p class="name" id="chicken">Chickenhare</p>
+                                        <p class="year">2022</p>
+                                        <p class="genre">Animation,Adventure</p>
+
+                                        <i class="fa-solid fa-star fa-2xs"></i>8.5
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_box">
+                                <img src="./images/slider/spiderhead.jpg-w180" alt="spiderhead" id="spiderhead">
+
+                                <span id="single-review-7"><i class="fa-solid fa-circle-play fa-5x"></i></span>
+                                <div class="img_hove">
+                                    <div class="info">
+                                        <p class="name" id="spider">Spider Head</p>
+                                        <p class="year">2022</p>
+                                        <p class="genre">Drama,Sci-Fi</p>
+
+                                        <i class="fa-solid fa-star fa-2xs"></i>8
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_box">
+                                <img src="./images/slider/rise of gru.jpg-w180" alt="rise-of gru" id="rise-of-gru">
+
+                                <span id="single-review-8"><i class="fa-solid fa-circle-play fa-5x"></i></span>
+                                <div class="img_hove">
+                                    <div class="info">
+                                        <p class="name" id="minions">Minions: rise of gru</p>
+                                        <p class="year">2022</p>
+                                        <p class="genre">Animation,Sci-Fi,Adventure,Comedy</p>
+
+                                        <i class="fa-solid fa-star fa-2xs"></i>9.5
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_box">
+                                <img src="./images/slider/sea beast.jpg-w180" alt="Sea beast" id="sea-beast">
+
+                                <span id="single-review-9"><i class="fa-solid fa-circle-play fa-5x"></i></span>
+                                <div class="img_hove">
+                                    <div class="info">
+                                        <p class="name" id="beast">Sea Beast</p>
+                                        <p class="year">2022</p>
+                                        <p class="genre">Animation,Sci-Fi,Adventure</p>
+
+                                        <i class="fa-solid fa-star fa-2xs"></i>8.5
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="single-muvi-details" id="close-it">
+            <div class="flex-hold">
+                <div class="muvi-img-sd">
+                    <img src="./images/movies/hot seat.jpg-w180" alt="hot seat" id="main-img">
+                </div>
+
+                <div class="muvi-details-sd">
+                    <h4 class="muvi-nm" id="main-name">Hot Seat</h4>
+                    <span class="remover-dt"><i class="fa-solid fa-xmark fa-xl"></i></span>
+                    <div class="grid-revs">
+                        <div class="actors">
+                            <p class="release-date">
+                                Release date <br> June 17.2022
+                            </p>
+                            <p class="director">
+                                Directed by <br> <strong>Clive Chuma</strong>
+                            </p>
+                            <p class="starring">
+                                <strong>Kevin Hart</strong> <br>
+                                <strong>Mark Rylance</strong> <br>
+                                <strong>Ruby Barnhill</strong> <br>
+                                <strong>Penelop Willton</strong> <br>
+                                <strong>Jemaine Clement</strong> <br>
+                            </p>
+                            <p class="md-t"><strong>+6 see more</strong></p>
+                        </div>
+
+                        <div class="side-genre">
+                            <p class="genre-name">
+                                Genre <br> <strong>Fantasy, Fiction</strong>
+                            </p>
+
+                            <p class="synopsis">
+                                <strong>Synopsis</strong> <br> Ten year old Sophie is in for the adventure of <br> a lifetime when she meets the Big Friendly <br> Giant (Kevin Hart).
+
+                            </p>
+                            <p class="last">
+                                Naturally scared at first, the young girl soon <br> realizes that the 24 foot beliemeth is artus.
+                            </p>
+
+                            <button onclick="window.location.href='singlemovie.html'">Watch Now</button>
+                        </div>
+                    </div>
+
+                    <div class="revs-grid-btm">
+                        <div class="ratings">
+                            <p class="topx">9/10</p>
+                            <p>Ratings by <strong>IMDb</strong></p>
+                        </div>
+                        <div class="percent">
+                            <p class="topx">89%</p>
+                            <p>MetaCritic</p>
+                        </div>
+                        <div class="stars">
+                            <p class="topx">stars</p>
+                            <p>From the users</p>
+                            <span class="give-rev">Give a Review</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="muvis">
+        <div class="muvi_tag">
+            <h4>Discover Movies</h4>
+            <div class="tagg">
+                <button class="button-value on_tag" data-filter="random">Random</button>
+                <button class="button-value" data-filter="popular">Popular</button>
+                <button class="button-value" data-filter="recent">Recent</button>
+            </div>
+
+            <div class="search-container">
+                <button class="font-a"><i class="fa-solid fa-magnifying-glass fa-xl"></i></button>
+                <input type="search" placeholder="Search something here...." class="search">
+            </div>
+        </div>
+
+
+        <div class="button_background">
+            <div class="muvi_list">
+
+                <div class="img_box resize" data-item="recent">
+                    <img src="./images/movies/after blue.jpg-w180" alt="after blue">
+                    <p class="genre-year">
+                        2022 / Drama, Thriller
+                    </p>
+                    <p class="name-mv">
+                        After Blue
+                    </p>
+                    <p class="hd">HD</p>
+                    <a href="singlemovie.html" class="player"><i class="fa-solid fa-circle-play fa-4x"></i></a>
+                    <p class="ret">6.6</p>
+
+                </div>
+
+
+
+                <div class="img_box resize" data-item="popular">
+                    <img src="./images/movies/bad blood.jpg-w180" alt=" bad blod ">
+                    <p class="genre-year">
+                        2021 / Drama, Thriller
+                    </p>
+                    <p class="name-mv">
+                        Bad Blood
+                    </p>
+                    <p class="hd">HD</p>
+                    <a href="singlemovie.html" class="player"><i class="fa-solid fa-circle-play fa-4x"></i></a>
+                    <p class="ret">5.0</p>
+                </div>
+
+
+
+                <div class="img_box resize " data-item="popular">
+                    <img src="./images/movies/black phone.jpg-w180" alt="black phone">
+                    <p class="genre-year">
+                        2020 / Drama, Thriller, Action
+                    </p>
+                    <p class="name-mv">
+                        Black Phone
+                    </p>
+                    <p class="hd">HD</p>
+                    <a href="singlemovie.html" class="player"><i class="fa-solid fa-circle-play fa-4x"></i></a>
+                    <p class="ret">5.2</p>
+                </div>
+
+
+                <div class="img_box resize" data-item="recent">
+                    <img src="./images/movies/civil.jpg-w180" alt="civil">
+                    <p class="genre-year">
+                        2022 / Drama, History
+                    </p>
+                    <p class="name-mv">
+                        Civil
+                    </p>
+                    <p class="hd">HD</p>
+                    <a href="singlemovie.html" class="player"><i class="fa-solid fa-circle-play fa-4x"></i></a>
+                    <p class="ret">7.5</p>
+                </div>
+
+
+
+                <div class="img_box resize" data-item="recent">
+                    <img src="./images/movies/crecked.jpg-w180" alt="crecked">
+                    <p class="genre-year">
+                        2022 / Drama, Thriller, Horror
+                    </p>
+                    <p class="name-mv">
+                        Crecked
+                    </p>
+                    <p class="hd">HD</p>
+                    <a href="singlemovie.html" class="player"><i class="fa-solid fa-circle-play fa-4x"></i></a>
+                    <p class="ret">6.5</p>
+                </div>
+
+                <div class="img_box resize " data-item="popular">
+                    <img src="./images/movies/crimes of the future.jpg-w180" alt="crimes">
+                    <p class="genre-year">
+                        2021 / Action, Sci-Fi
+                    </p>
+                    <p class="name-mv">
+                        Crimes of the future
+                    </p>
+                    <p class="hd">HD</p>
+                    <a href="singlemovie.html" class="player"><i class="fa-solid fa-circle-play fa-4x"></i></a>
+                    <p class="ret">6.0</p>
+                </div>
+
+
+
+                <div class="img_box resize" data-item="recent">
+                    <img src="./images/movies/dangerous.jpg-w180" alt="ganderouse lies">
+                    <p class="genre-year">
+                        2022 / Romance, Comedy
+                    </p>
+                    <p class="name-mv">
+                        Dangerous Liars
+                    </p>
+                    <p class="hd">HD</p>
+                    <a href="singlemovie.html" class="player"><i class="fa-solid fa-circle-play fa-4x"></i></a>
+                    <p class="ret">7.2</p>
+                </div>
+
+
+
+                <div class="img_box resize" data-item="popular">
+                    <img src="./images/movies/dont make me go.jpg-w180" alt="dont make me">
+                    <p class="genre-year">
+                        2015 / Drama
+                    </p>
+                    <p class="name-mv">
+                        Dont make me go
+                    </p>
+                    <p class="hd">HD</p>
+                    <a href="singlemovie.html" class="player"><i class="fa-solid fa-circle-play fa-4x"></i></a>
+                    <p class="ret">5.8</p>
+                </div>
+
+
+
+                <div class="img_box resize " data-item="popular">
+                    <img src="./images/movies/down with the king.jpg-w180" alt="with the king">
+                    <p class="genre-year">
+                        2020 / Documentry, History
+                    </p>
+                    <p class="name-mv">
+                        Down with the king
+                    </p>
+                    <p class="hd">HD</p>
+                    <a href="singlemovie.html" class="player"><i class="fa-solid fa-circle-play fa-4x"></i></a>
+                    <p class="ret">8.4</p>
+                </div>
+
+
+
+                <div class="img_box resize " data-item="popular">
+                    <img src="./images/movies/father of the bride.jpg-w180" alt="father of the bride">
+                    <p class="genre-year">
+                        2021 / Comedy, Romance
+                    </p>
+                    <p class="name-mv">
+                        Father of the bride
+                    </p>
+                    <p class="hd">HD</p>
+                    <a href="singlemovie.html" class="player"><i class="fa-solid fa-circle-play fa-4x"></i></a>
+                    <p class="ret">7.0</p>
+                </div>
+
+
+                <div class="img_box resize " data-item="recent">
+                    <img src="./images/movies/first love.jpg-w180" alt="first love">
+                    <p class="genre-year">
+                        2022 / Drama, Romance
+                    </p>
+                    <p class="name-mv">
+                        First Love
+                    </p>
+                    <p class="hd">HD</p>
+                    <a href="singlemovie.html" class="player"><i class="fa-solid fa-circle-play fa-4x"></i></a>
+                    <p class="ret">9.0</p>
+                </div>
+
+
+                <div class="img_box resize " data-item="popular">
+                    <img src="./images/movies/gaslight.jpg-w180" alt="gaslight">
+                    <p class="genre-year">
+                        2018 / Drama, Thriller, Romance
+                    </p>
+                    <p class="name-mv">
+                        Gaslight
+                    </p>
+                    <p class="hd">HD</p>
+                    <a href="singlemovie.html" class="player"><i class="fa-solid fa-circle-play fa-4x"></i></a>
+                    <p class="ret">5.5</p>
+                </div>
+
+
+
+                <div class="img_box resize " data-item="popular">
+                    <img src="./images/movies/glamour girls.jpg-w180" alt="glamour girls">
+                    <p class="genre-year">
+                        2020 / Romance
+                    </p>
+                    <p class="name-mv">
+                        Glamour Girls
+                    </p>
+                    <p class="hd">HD</p>
+                    <a href="singlemovie.html" class="player"><i class="fa-solid fa-circle-play fa-4x"></i></a>
+                    <p class="ret">7.8</p>
+                </div>
+
+
+
+                <div class="img_box resize " data-item="recent">
+                    <img src="./images/movies/god waiting room.jpg-w180" alt="god waiting room">
+                    <p class="genre-year">
+                        2022 / Drama, Christianity
+                    </p>
+                    <p class="name-mv">
+                        God's waiting room
+                    </p>
+                    <p class="hd">HD</p>
+                    <a href="singlemovie.html" class="player"><i class="fa-solid fa-circle-play fa-4x"></i></a>
+                    <p class="ret">8.5</p>
+                </div>
+
+
+                <div class="img_box resize " data-item="popular">
+                    <img src="./images/movies/halftime.jpg-w180" alt="halftime">
+                    <p class="genre-year">
+                        2021 / Drama, Romance, Comedy
+                    </p>
+                    <p class="name-mv">
+                        Half Time
+                    </p>
+                    <p class="hd">HD</p>
+                    <a href="singlemovie.html" class="player"><i class="fa-solid fa-circle-play fa-4x"></i></a>
+                    <p class="ret">7.7</p>
+                </div>
+
+
+                <div class="img_box resize " data-item="recent">
+                    <img src="./images/movies/hello goodbye.jpg-w180" alt="hello and goodbye">
+                    <p class="genre-year">
+                        2022 / Romance, Comedy
+                    </p>
+                    <p class="name-mv">
+                        Everything in between
+                    </p>
+                    <p class="hd">HD</p>
+                    <a class="player"><i class="fa-solid fa-circle-play fa-4x"></i></a>
+                    <p class="ret">6.8</p>
+                </div>
+            </div>
+
+            <a href="#" class="muvi_pg">Discover More</a>
+        </div>
+
+
+    </section>
+
+    <footer class="footer">
+        <div class="left-comments">
+            <h4>Hall Of Fame</h4>
+
+            <div class="two-sec">
+                <div class="hed">
+                    <p class="top-rev">Top Reviewers</p>
+
+                    <p class="see-a">See All</p>
+                </div>
+
+
+                <div class="munhu">
+                    <div class="ka-img">
+                        <img src="./images/reviwers/makandiwa.jpg" alt="">
+                    </div>
+                    <div>Richie Freeman</div>
+
+                    <span class="numbers">2718</span>
+                </div>
+
+
+                <div class="munhu">
+                    <div class="ka-img">
+                        <img src="./images/reviwers/coding.jpg" alt="">
+                    </div>
+                    <div>Israel Harmond</div>
+
+                    <span class="numbers izz">2678</span>
+                </div>
+
+
+                <div class="munhu">
+                    <div class="ka-img">
+                        <img src="./images/reviwers/the dude.jpg" alt="">
+                    </div>
+                    <div>Andre Knight</div>
+
+                    <span class="numbers d1">2665</span>
+                </div>
+
+
+                <div class="munhu">
+                    <div class="ka-img">
+                        <img src="./images/reviwers/the dude2.jpg" alt="">
+                    </div>
+                    <div>Connor Tate</div>
+
+                    <span class="numbers d2">2643</span>
+                </div>
+
+
+                <div class="munhu">
+                    <div class="ka-img">
+                        <img src="./images/reviwers/the guy.jpg" alt="">
+                    </div>
+                    <div>Hjing Salah</div>
+
+                    <span class="numbers g1">2636</span>
+                </div>
+
+            </div>
+
+            <!--------------------------------------------------------------------->
+            <div class="two-sec t2">
+                <div class="hed">
+                    <p class="top-rev">Top Fandom</p>
+
+                    <p class="see-a see1">See All</p>
+                </div>
+
+
+                <div class="munhu">
+                    <div class="ka-img">
+                        <img src="./images/reviwers/fandom1.jpg" alt="">
+                    </div>
+                    <div>Potterheads</div>
+
+                    <span class="numbers">7532</span>
+                </div>
+
+
+                <div class="munhu">
+                    <div class="ka-img">
+                        <img src="./images/reviwers/fandom2.jpg" alt="">
+                    </div>
+                    <div>Ringers</div>
+
+                    <span class="numbers izz">5231</span>
+                </div>
+
+
+                <div class="munhu">
+                    <div class="ka-img">
+                        <img src="./images/reviwers/fandom3.jpg" alt="">
+                    </div>
+                    <div>Gladers</div>
+
+                    <span class="numbers d1">3874</span>
+                </div>
+
+
+                <div class="munhu">
+                    <div class="ka-img">
+                        <img src="./images/reviwers/fandom4.jpg" alt="">
+                    </div>
+                    <div>Avatards</div>
+
+                    <span class="numbers d2">2643</span>
+                </div>
+
+
+                <div class="munhu">
+                    <div class="ka-img">
+                        <img src="./images/reviwers/fandom5.jpg" alt="">
+                    </div>
+                    <div>Batmaniacs</div>
+
+                    <span class="numbers g1">2240</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="right-news">
+            <div class="arrows">
+                <h4>News</h4>
+                <div class="spans">
+                    <span class="left"><i class="fa-solid fa-arrow-left fa-lg"></i></span>
+                    <span class="right"><i class="fa-solid fa-arrow-right fa-lg"></i>
+                        <span class="sorry">go visit news page<i class="fa-solid fa-face-pleading"></i></span>
+                    </span>
+
+                </div>
+            </div>
+
+            <div class="news_holder">
+                <div class="full-wd">
+                    <div class="pic">
+                        <img src="./images/news/black panther.webp" alt="">
+                    </div>
+                    <div class="nws-hldr">
+                        <p class="bld">
+                            <strong>2 hours ago</strong> - <strong>by </strong> Vogo
+                        </p>
+                        <p class="grn">
+                            "Black Panther" Is going to be a hit for Marvel. But DC Needs to start marking Better Movies
+                        </p>
+                        <p class="scnd">
+                            There is an old adage that Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus impedit autem a cum sunt inventore mollitia enim debitis eos ducimus dolore, quam esse, quibusdam deserunt!
+                        </p>
+                        <p class="thrd">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt neque beatae pariatur officiis laudantium nostrum!
+                        </p>
+
+                        <a href="#" class="full-art">Read Full Article</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="three-sec">
+                <div class="sec-hldr">
+                    <div class="sec-img">
+                        <img src="./images/news/spider man across the spider verse.webp" alt="">
+                    </div>
+                    <p class="bld">
+                        <strong>4 hours ago</strong> - <strong>by </strong> Rob
+                    </p>
+                    <p class="grn">
+                        A new "Spider Man Across The Spider Verse" trailer is coming very soon.
+                    </p>
+                </div>
+                <div class="sec-hldr">
+                    <div class="sec-img">
+                        <img src="./images/news/Summer Movie Calendar 2022.jpg" alt="">
+                    </div>
+                    <p class="bld">
+                        <strong>4 hours ago</strong> - <strong>by </strong> Rob
+                    </p>
+                    <p class="grn">
+                        If you are a movie lover like me, here are this year 2022 top movies that you must look forward to before end of this year.
+                    </p>
+                </div>
+                <div class="sec-hldr">
+                    <div class="sec-img">
+                        <img src="./images/news/top gun maverick tom cruise.webp" alt="">
+                    </div>
+                    <p class="bld">
+                        <strong>4 hours ago</strong> - <strong>by </strong> Rob
+                    </p>
+                    <p class="grn">
+                        Top Gun Maverick, release date and all the stars that are featuring in this unticepated movie.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section class="copy_rights">
+        <h5 class="my-name">
+            All &copy Copyrights Reserved <strong class="red"> CLIVE CHUMA</strong>
+        </h5>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script type="text/javascript">
+        var swiper = new Swiper(".card_slider", {
+            slidesPerView: 3,
+            spaceBetween: 3,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                360: {
+                    slidesPerView: 1.5,
+
+
+                },
+                390: {
+                    slidesPerView: 1.55,
+
+
+                },
+
+                480: {
+                    slidesPerView: 2.1,
+
+
+                },
+                768: {
+                    slidesPerView: 3,
+
+
+                },
+                1200: {
+                    slidesPerView: 5.7,
+
+
+                },
+            },
+        });
+    </script>
+
+    <!-- filter JS -->
+    <script src="./js/filter.js"></script>
+
+    <!-- slider JS -->
+    <script src="./js/slider.js"></script>
+
+    <!-- main JS -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

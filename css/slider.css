@@ -1,0 +1,200 @@
+#slider {
+    position: relative;
+}
+
+.single-muvi-details {
+    position: absolute;
+    top: 20px;
+    left: 300px;
+    z-index: 100;
+    display: block;
+    width: 100%;
+    display: none;
+}
+
+.single-muvi-details.on-display {
+    display: block;
+}
+
+#close-it.off-display {
+    display: none;
+}
+
+.flex-hold {
+    display: flex;
+}
+
+.muvi-img-sd {
+    height: 470px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.muvi-img-sd img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.muvi-details-sd {
+    width: 33%;
+    color: rgb(184, 169, 169);
+    background-color: #fff;
+    padding: 20px 20px 10px 20px;
+    height: 430px;
+    margin-top: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+}
+
+.muvi-details-sd .remover-dt {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.muvi-details-sd .remover-dt:hover {
+    color: rgb(231, 60, 60);
+}
+
+.muvi-details-sd .muvi-nm {
+    font-size: 19px;
+    color: rgb(58, 58, 129);
+    margin: 0px 0px 15px 0px;
+}
+
+.muvi-details-sd .grid-revs {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    border-top: 1px solid rgb(184, 169, 169);
+    border-bottom: 1px solid rgb(184, 169, 169);
+    margin-bottom: 10px;
+    padding: 20px 0px;
+}
+
+.muvi-details-sd .grid-revs .actors {
+    font-size: 14px;
+}
+
+.muvi-details-sd .grid-revs .actors strong {
+    color: #000000;
+    font-weight: bold;
+}
+
+.muvi-details-sd .grid-revs .actors .release-date,
+.muvi-details-sd .grid-revs .actors .director {
+    margin-bottom: 15px;
+    line-height: 20px;
+}
+
+.muvi-details-sd .grid-revs .actors .starring {
+    line-height: 22px;
+}
+
+.muvi-details-sd .grid-revs .actors .md-t {
+    margin-top: 11px;
+    cursor: pointer;
+}
+
+.muvi-details-sd .grid-revs .side-genre {
+    font-size: 13px;
+    line-height: 22px;
+}
+
+.muvi-details-sd .grid-revs .side-genre .genre-name {
+    font-size: 14px;
+}
+
+.muvi-details-sd .grid-revs .side-genre .genre-name strong {
+    color: #000000;
+    font-size: 13px;
+}
+
+.muvi-details-sd .grid-revs .side-genre .synopsis,
+.muvi-details-sd .grid-revs .side-genre .last {
+    margin-top: 10px;
+}
+
+.muvi-details-sd .grid-revs .side-genre .last {
+    margin-bottom: 10px;
+}
+
+.muvi-details-sd .grid-revs .side-genre .synopsis strong {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.muvi-details-sd .grid-revs .side-genre button {
+    padding: 10px 25px;
+    background: transparent;
+    border-radius: 20px;
+    border: 1px solid rgb(231, 60, 60);
+    color: rgb(231, 60, 60);
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.muvi-details-sd .grid-revs .side-genre button:hover {
+    background-color: rgb(58, 58, 129);
+    color: rgb(184, 169, 169);
+    border: none;
+}
+
+.muvi-details-sd .revs-grid-btm {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+}
+
+.muvi-details-sd .revs-grid-btm .topx {
+    color: rgb(58, 58, 129);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.muvi-details-sd .revs-grid-btm p {
+    font-size: 13px;
+}
+
+.muvi-details-sd .revs-grid-btm strong {
+    color: #000000;
+}
+
+.muvi-details-sd .revs-grid-btm .ratings {
+    border-right: 1px solid rgb(184, 169, 169);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.muvi-details-sd .revs-grid-btm .percent,
+.muvi-details-sd .revs-grid-btm .stars {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.muvi-details-sd .revs-grid-btm .percent {
+    border-right: 1px solid rgb(184, 169, 169);
+}
+
+.muvi-details-sd .revs-grid-btm .stars .give-rev {
+    padding: 20px 0px 20px 17px;
+    background-color: green;
+    border-radius: 50%;
+    width: 75px;
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    top: -60px;
+    right: -60px;
+}
+
+.muvi-details-sd .revs-grid-btm .stars .give-rev:hover {
+    box-shadow: 0 0 10px black;
+}
